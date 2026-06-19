@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Professional portfolio showcasing web development skills, projects, and an interactive resume.">
+    <meta name="keywords" content="Web Developer, Portfolio, Frontend, HTML, CSS, JavaScript">
+    <meta name="author" content="Your Name">
+    <title>My Professional Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">MyPortfolio</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="about" class="hero-section">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlight">Kothamasu Rupavalli</span></h1>
+            <p> A AI Engineer passionate about creating innovative solutions and pushing the boundaries of what's
+                possible with artificial intelligence.</p>
+            <div class="btn-group">
+                <a href="#projects" class="btn primary-btn">View Projects</a>
+                <a href="#contact" class="btn secondary-btn">Contact Me</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="projects" class="section-container alt-bg">
+        <h2 class="section-title">Portfolio Projects</h2>
+        <div class="grid-container">
+
+            <div class="card">
+                <h3>QuickNest | Restaurant Delivery Management System</h3>
+                <p>A comprehensive dashboard featuring live fleet tracking and weekly order trend visualizations. The
+                    underlying architecture includes a strict four-table relational schema (Customers, Orders,
+                    DeliveryStaff, Delivery) designed entirely for manual CRUD operations without reliance on
+                    pre-populated mock data.</p>
+                <div class="tech-stack">
+                    <span>HTML/CSS</span>
+                    <span>JavaScript</span>
+                    <span>SQL</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>My Portfolio</h3>
+                <p>A responsive portfolio website showcasing my projects and skills </p>
+                <div class="tech-stack">
+                    <span>HTML/CSS</span>
+                    <span>JavaScript</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="resume" class="section-container">
+        <h2 class="section-title">Resume & Certifications</h2>
+        <div class="resume-content">
+
+            <div class="resume-column">
+                <h3 class="highlight">Technical Skills</h3>
+                <ul class="skill-list">
+                    <li>Frontend: HTML5, CSS, JavaScript</li>
+                    <li>Frameworks: React.js (Learning)</li>
+                    <li>Tools: VS Code, Git, GitHub</li>
+                </ul>
+            </div>
+
+            <div class="resume-column">
+                <h3 class="highlight">Certifications</h3>
+                <ul class="skill-list">
+                    <li>
+                        <strong>PythonEssentials1</strong><br>
+                        <a href="./assets/cert1.pdf" target="_blank" class="text-link">View Certificate &rarr;</a>
+                    </li>
+                    <li>
+                        <strong>PythonEssentials2</strong><br>
+                        <a href="./assets/cert2.pdf" target="_blank" class="text-link">View Certificate &rarr;</a>
+                    </li>
+                    <li style="margin-top: 1rem;">
+                        <strong>Database Management Systems</strong><br>
+                        <a href="./assets/cert3.pdf" target="_blank" class="text-link">View Certificate &rarr;</a>
+                    </li>
+                    <li>
+                        <strong> AWS Fundamentals of AI & ML</strong><br>
+                        <a href="./assets/cert4.pdf" target="_blank" class="text-link">View Certificate &rarr;</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="resume-download" style="flex-basis: 100%; margin-top: 1rem;">
+                <p>Want a hard copy of my professional background?</p>
+                <a href="./assets/resume.pdf" class="btn primary-btn" download="My_Resume.pdf">Download Full Resume
+                    (.pdf)</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="section-container alt-bg">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="form-container">
+            <form id="contact-form" action="mailto:youremail@example.com" method="POST" enctype="text/plain">
+                <div class="input-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your name">
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                </div>
+                <div class="input-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required
+                        placeholder="Write your message here..."></textarea>
+                </div>
+                <button type="submit" class="btn primary-btn submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Your Name. Code hosted on <a href="#" class="text-link">GitHub</a>.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
